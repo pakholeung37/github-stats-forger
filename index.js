@@ -202,7 +202,7 @@ function createProgressBar(total) {
             const empty = 30 - filled;
             
             const bar = '█'.repeat(filled) + '░'.repeat(empty);
-            process.stdout.write(`\\r⏳ 进度: [${bar}] ${percentage}% (${current}/${total})`);
+            process.stdout.write(`\r⏳ 进度: [${bar}] ${percentage}% (${current}/${total})`);
         }
     };
 }
